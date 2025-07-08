@@ -21,14 +21,16 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://priteshpatel.dev" />
     </Head>
+    <Header />
     <main>
-      <Header />
       <Hero />
       <About />
       <Projects />
       <Contact />
-      <Footer />
     </main>
+    <footer>
+      <Footer />
+    </footer>
     </>
   );
 }
