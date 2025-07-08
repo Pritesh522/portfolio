@@ -12,8 +12,8 @@ import { cn } from "@/lib/utils"
 
 
 const navItems = [
-  { label: "Blog", href: "/blog" },
-  { label: "Dashboard", href: "/dashboard" },
+  { label: "Blog", href: "/#blog" },
+  { label: "Dashboard", href: "/#dashboard" },
   { label: "Projects", href: "/#projects" },
   { label: "About", href: "/#about" },
 ]
@@ -84,6 +84,7 @@ const Navbar: FC = () => {
                           "text-gray-800 dark:text-gray-200",
                           "hover:text-blue-500 dark:hover:text-blue-400"
                         )}
+                        onClick={() => setOpen(false)}
                       >
                         {item.label}
                       </Link>
