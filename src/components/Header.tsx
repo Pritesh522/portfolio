@@ -6,7 +6,6 @@ import { useState } from "react";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator"
 import { Menu } from "lucide-react";
-import { useTheme } from "next-themes"
 import { ThemeToggle } from "./ThemeToggle";
 import { cn } from "@/lib/utils"
 
@@ -19,9 +18,7 @@ const navItems = [
 ]
 
 const Navbar: FC = () => {
-  const { theme, setTheme } = useTheme()
   const [open, setOpen] = useState(false);
-  const isDark = theme === "dark"
 
   return (
     <header className="fixed inset-x-0 top-0 z-50">
